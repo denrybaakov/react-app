@@ -1,9 +1,18 @@
 .search-panel {
-  margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .search-panel .search-input {
-  width: auto;
-  flex-grow: 1;
-  margin-right: 3px;
+	width: auto;
+	flex-grow: 1;
+	margin-right: 33px;
+	color: #fff;
+	background-color: #253341;
+	border: 1px solid #253341;
+}
+
+.search-input:focus {
+	border: 1px solid #0c8760;
+	outline: none;
+	box-shadow: none;
 }

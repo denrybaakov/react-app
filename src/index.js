@@ -10,7 +10,5 @@ import './index.css';
 
 
 
-
-
-
+// ReactDOM.render(<All />, document.getElementById('root'));
 ReactDOM.render(<App />, document.getElementById('root'));

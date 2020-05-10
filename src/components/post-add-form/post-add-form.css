@@ -1,9 +1,18 @@
 .bottom-panel {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .bottom-panel .new-post-label {
-  width: auto;
-  flex-grow: 1;
-  margin-right: 3px;
+	width: auto;
+	flex-grow: 1;
+	margin-right: 33px;
+	color: #fff;
+	background-color: #253341;
+	border: 1px solid #253341;
+}
+
+.new-post-label:focus {
+	border: 1px solid #0c8760;
+	outline: none;
+	box-shadow: none;
 }

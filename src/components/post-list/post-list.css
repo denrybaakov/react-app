@@ -1,7 +1,20 @@
 .app-list {
-    margin-top: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .app-list .list-group-item {
-  padding: 20px 35px 10px 35px;
-  margin-top: 10px;
+	padding: 20px 35px 10px 35px;
+	margin-top: 10px;
+	background-color: #1a2735;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	border: 1px solid #38454e;
+}
+
+.list-group-item:hover {
+	background-color: #212e3b;
+	border: 1px solid #212e3b;
 }

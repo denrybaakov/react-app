@@ -1,54 +1,79 @@
 .app-list-item {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 .app-list-item button {
-  width: 35px;
-  height: 35px;
-  margin: 3px;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+	width: 35px;
+	height: 35px;
+	margin: 3px;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
 }
 .app-list-item button:focus {
-    box-shadow: none;
-    outline: none;
+	box-shadow: none;
+	outline: none;
 }
 .app-list-item .btn-star {
-    color: #FFD700;
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #475f77;
+	transition: all 0.3s;
+}
+.app-list-item .btn-star:hover {
+	/* color: #fff; */
+	background-color: #2f4357;
+	border: 1px solid #55718e;
 }
 .app-list-item .btn-trash {
-    color: red;
+	color: tomato;
+	background-color: transparent;
+	border: 1px solid #475f77;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+.app-list-item .btn-trash:hover {
+	border: 1px solid #e60e37;
+	background-color: #e60e37;
+	color: #fff;
 }
 .app-list-item .fa-heart {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    font-size: 16px;
-    color: red;
-    transition: 0.3s all;
-    transform: translateX(30px);
-    opacity: 0;
+	margin-left: 22px;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 16px;
+	color: red;
+	transition: 0.3s all;
+	transform: translateX(50px);
+	opacity: 0;
+	-webkit-transform: translateX(50px);
+	-moz-transform: translateX(50px);
+	-ms-transform: translateX(50px);
+	-o-transform: translateX(50px);
 }
 
 .app-list-item-label {
-  display: block;
-  line-height: 35px;
-  cursor: pointer;
-  user-select: none;
-  transition: 0.5s all;
+	display: block;
+	line-height: 35px;
+	cursor: pointer;
+	user-select: none;
+	transition: 0.5s all;
 }
 
 .app-list-item.like .fa-heart {
-    opacity: 1;
-    transform: translateX(0px);
+	opacity: 1;
+	transform: translateX(0px);
 }
 
 .app-list-item.important .app-list-item-label {
-  color: #FFD700;
+	color: #0c8760;
 }
 
 .app-list-item.important .btn-star {
-    color: #aeaeae;
+	color: #ffd700;
 }
