@@ -1,7 +1,7 @@
 import App from './app';
 
 //--styles
-import './app.css';
+import './app.sass';
 
 
 
