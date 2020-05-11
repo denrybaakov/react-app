@@ -22,8 +22,6 @@ export default class App extends Component {
     };
     this.deleteItem = this.deleteItem.bind(this);
     this.addItem = this.addItem.bind(this);
-
-    // this.maxId = 4;
   }
 
   deleteItem(id) {
@@ -58,10 +56,12 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-        <AppHeader />
-        <div className="search-panel d-flex">
-          <SearchPanel />
-          <PostStatus />
+        <div className="fixed-menu">
+          <AppHeader />
+          <div className="search-panel d-flex">
+            <SearchPanel />
+            <PostStatus />
+          </div>
         </div>
         <PostList
           posts={this.state.data}
