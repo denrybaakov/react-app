@@ -6,7 +6,7 @@ import PostStatus from '../post-status-filter';
 import PostList from '../post-list';
 import PostAddForm from '../post-add-form/';
 
-
+import nextId from 'react-id-generator';
 
 
 
@@ -15,15 +15,15 @@ export default class App extends Component {
     super(props);
     this.state = {
       data: [
-        { id: 1, label: 'Хочу выучить английский язык', important: false },
-        { id: 2, label: 'Изучить javascript & React + Redux', important: true },
-        { id: 3, label: 'Изучить Canvas ', important: false }
+        { id: nextId(), label: 'Хочу выучить английский язык', important: false },
+        { id: nextId(), label: 'Изучить javascript & React + Redux', important: true },
+        { id: nextId(), label: 'Изучить Canvas ', important: false }
       ]
     };
     this.deleteItem = this.deleteItem.bind(this);
     this.addItem = this.addItem.bind(this);
 
-    this.maxId = 4;
+    // this.maxId = 4;
   }
 
   deleteItem(id) {
@@ -31,6 +31,7 @@ export default class App extends Component {
       const index = data.findIndex(elem => elem.id === id);
       const newData = [...data.slice(0, index), ...data.slice(index + 1)];
 
+      // console.log(newData);
       return {
         data: newData
       };
@@ -39,15 +40,18 @@ export default class App extends Component {
 
   addItem(text) {
     const newItem = {
-      id: this.maxId++,
+      id: nextId(),
       label: text,
       important: false
     };
+
     this.setState(({ data }) => {
       const newArr = [...data, newItem];
+      // console.log(newArr);
       return {
         data: newArr
       }
+
     });
   }
 
